@@ -1,0 +1,4 @@
+Name: Dictionary
+version: 2.1
+Date: 17/11/2019
+Producer: Bui Quang Thang

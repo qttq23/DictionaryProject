@@ -1,0 +1,48 @@
+# ...
+- draft algorithms
+- build dictionary
+- build dictionary helper
+- write GUI classes
+
+
+# 14/11/2019 - version 1.0
+- gather: dictionary (data), dictionary helper (bus), home frame (gui)
+  to make an intial GUI version of dictionary.
+- features:
+	+ load data from file to dictionary (static)
+	+ simple GUI (see figure01)
+	+ type in search box
+	+ show related words
+	+ click/double click on listview
+	+ click 'search' button
+	+ show content  
+
+
+# 15/11/2019 - version 2.0
+- Add feature: search button is triggered when user press ENTER
+- refactor program: add generic interfaces, add abstract class
+details:
+	IconDictionary (data) ---> IDictionary (generic interface) ---> DictionaryHelper (data bus)
+	// Data Business uses Data through an interface
+	
+	DictionaryHelper (data bus) ---> IDictionaryHelper (generic interface) ---> HomeFrame (Gui)
+	// GUI uses Data Business through an interface
+
+	HomeFrame (Gui) ---> DictionaryFrame (general dictionary graphical interface)
+	// There is a common GUI class for dictionary and HomeFrame extends it.
+
+
+# 17/11/2019 - version 2.1
+- Add remaining features: add, edit, remove, rename, history, about
+- set tool bar, set menu bar
+- add icons
+- add information file
+
+# 24/11/2019 - version 2.2
+- Replace HashMap (for dictionary) with TreeMap
+- Add 'reverse search' list to dictionary for searching 'value' => 'key'
+- Add feature 'find by meaning' to GUI
+
+# 24/11/2019 - version 2.3
+- write documents
+- update some icons,...
